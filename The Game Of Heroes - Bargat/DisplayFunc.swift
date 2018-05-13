@@ -21,3 +21,10 @@ func teamInfo(team: Team) {
         }
     }
 }
+
+// Congratulations to the winner
+
+func congratulateTheWinner(winner: Team, loser: Team) {
+    print("\nBravo à \(winner.player.playerName) qui remporte la partie! \(loser.player.playerName) n'aura pas démérité mais est tombé sur plus vaillant aujourd'hui!")
+    print("La partie a duré \(roundNumber) tours! Waouh, c'était intense!")
+}

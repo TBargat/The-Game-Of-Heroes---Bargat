@@ -25,3 +25,19 @@ while team1.totalLifePoints != 0 && team2.totalLifePoints != 0 {
         roundNumber += 1
     }
 }
+
+
+// We create two variable, to store our winner and our loser later.
+var winner: Team
+var loser: Team
+
+if team1.totalLifePoints == 0 { // we observe the two potential outcomes of our game to initiate our variables
+    winner = team2
+    loser = team1
+} else {
+    winner = team1
+    loser = team2
+}
+
+// We close the game with this function
+congratulateTheWinner(winner: winner, loser: loser)
