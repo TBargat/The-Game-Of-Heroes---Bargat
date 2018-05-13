@@ -9,4 +9,6 @@ letsStart()
 var team1 = teamBuilding(number: 1)
 var team2 = teamBuilding(number: 2)
 
+// This variable allows us to keep the count of rounds in the game
+var roundNumber = 0
 
