@@ -1,12 +1,12 @@
-//
-//  main.swift
-//  The Game Of Heroes - Bargat
-//
-//  Created by Thibault Dev on 13/05/2018.
-//  Copyright © 2018 Thibault Dev. All rights reserved.
-//
-
 import Foundation
 
-print("Hello, World!")
+// THE GAME OF HEROES
+
+// Some text to launch the game
+letsStart()
+
+// We define two instances of our class Team to start the game and set up the characters and teams
+var team1 = teamBuilding(number: 1)
+var team2 = teamBuilding(number: 2)
+
 
