@@ -73,3 +73,28 @@ func teamBuilding(number: Int) -> Team {
         + "\n- \(team.character3.characterName) qui est un \(team.character3.typeName)")
     return team
 }
+
+// Function to play a round of fight
+func playRound(teamAttack: Team, teamDefense: Team){// We have on team that attacks and the other one that defends, hence, our round function takes in account those two teams.
+    teamInfo(team: teamAttack)
+    teamInfo(team: teamDefense)
+    let attacker = pickYourAttacker(team: teamAttack)
+    if Int(arc4random_uniform(9)) == 4{// to make our mysterious box appear randomly, we have odds of 1 out of 10
+        randomMysteriousBox(character: attacker)
+    }
+    if attacker.characterType == .Healer {// Healers targets their own team, they need to be treated separately
+        let target = pickYourTargetHealer(team: teamAttack)
+        attacker.useWeapon(on: target)
+    } else {
+        let target = pickYourTarget(teamAttack: teamAttack, teamDefense: teamDefense)
+        if attacker.characterType == .Giant{
+            attacker.useWeapon(on: target)
+            attacker.lifePointsChange(dammages: attacker.weaponDammages/3)// The Giant hits his ennemy with his fist, hence he also loses lifepoints whenever he attacks.
+        } else {
+            attacker.useWeapon(on: target)
+        }
+    }
+    // We update the teams' total of life points
+    teamAttack.totalLifePoints = teamAttack.character1.lifePoints + teamAttack.character2.lifePoints +  teamAttack.character3.lifePoints
+    teamDefense.totalLifePoints = teamDefense.character1.lifePoints + teamDefense.character2.lifePoints +  teamAttack.character3.lifePoints
+}

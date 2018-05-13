@@ -14,6 +14,7 @@
 		F6F367B120A8985000068336 /* DisplayFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F367B020A8985000068336 /* DisplayFunc.swift */; };
 		F6F367B320A898A900068336 /* ActionFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F367B220A898A900068336 /* ActionFunc.swift */; };
 		F6F367B520A89A6200068336 /* PickingFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F367B420A89A6200068336 /* PickingFunc.swift */; };
+		F6F367B720A89B1800068336 /* MysteriousBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F367B620A89B1800068336 /* MysteriousBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		F6F367B020A8985000068336 /* DisplayFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayFunc.swift; sourceTree = "<group>"; };
 		F6F367B220A898A900068336 /* ActionFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFunc.swift; sourceTree = "<group>"; };
 		F6F367B420A89A6200068336 /* PickingFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingFunc.swift; sourceTree = "<group>"; };
+		F6F367B620A89B1800068336 /* MysteriousBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysteriousBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +74,11 @@
 				F6F367A320A8977F00068336 /* main.swift */,
 				F6F367B020A8985000068336 /* DisplayFunc.swift */,
 				F6F367B220A898A900068336 /* ActionFunc.swift */,
-				F6F367AA20A897C500068336 /* Character.swift */,
-				F6F367AC20A897D000068336 /* Player.swift */,
-				F6F367AE20A897DC00068336 /* Team.swift */,
 				F6F367B420A89A6200068336 /* PickingFunc.swift */,
+				F6F367B620A89B1800068336 /* MysteriousBox.swift */,
+				F6F367AE20A897DC00068336 /* Team.swift */,
+				F6F367AC20A897D000068336 /* Player.swift */,
+				F6F367AA20A897C500068336 /* Character.swift */,
 			);
 			path = "The Game Of Heroes - Bargat";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				F6F367AF20A897DC00068336 /* Team.swift in Sources */,
 				F6F367A420A8977F00068336 /* main.swift in Sources */,
 				F6F367B120A8985000068336 /* DisplayFunc.swift in Sources */,
+				F6F367B720A89B1800068336 /* MysteriousBox.swift in Sources */,
 				F6F367B520A89A6200068336 /* PickingFunc.swift in Sources */,
 				F6F367AD20A897D000068336 /* Player.swift in Sources */,
 				F6F367AB20A897C500068336 /* Character.swift in Sources */,
