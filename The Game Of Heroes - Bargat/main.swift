@@ -15,11 +15,17 @@ var roundNumber = 0
 //This function is running the fight of the two team until one of them dies ..!
 while team1.totalLifePoints != 0 && team2.totalLifePoints != 0 {
     playRound(teamAttack: team1, teamDefense: team2)
+    // We update the lifepoints
+    team1.totalLifePoints = team1.character1.lifePoints + team1.character2.lifePoints +  team1.character3.lifePoints
+    team2.totalLifePoints = team2.character1.lifePoints + team2.character2.lifePoints +  team2.character3.lifePoints
     print("L'équipe de \(team1.player.playerName) a un total de \(team1.totalLifePoints) PVs")
     print("L'équipe de \(team2.player.playerName) a un total de \(team2.totalLifePoints) PVs")
     roundNumber += 1
     if team2.totalLifePoints != 0 {
         playRound(teamAttack: team2, teamDefense: team1)
+        // We update the lifepoints
+        team1.totalLifePoints = team1.character1.lifePoints + team1.character2.lifePoints +  team1.character3.lifePoints
+        team2.totalLifePoints = team2.character1.lifePoints + team2.character2.lifePoints +  team2.character3.lifePoints
         print("L'équipe de \(team1.player.playerName) a un total de \(team1.totalLifePoints) PVs")
         print("L'équipe de \(team2.player.playerName) a un total de \(team2.totalLifePoints) PVs")
         roundNumber += 1

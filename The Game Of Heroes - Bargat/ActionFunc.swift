@@ -94,7 +94,4 @@ func playRound(teamAttack: Team, teamDefense: Team){// We have on team that atta
             attacker.useWeapon(on: target)
         }
     }
-    // We update the teams' total of life points
-    teamAttack.totalLifePoints = teamAttack.character1.lifePoints + teamAttack.character2.lifePoints +  teamAttack.character3.lifePoints
-    teamDefense.totalLifePoints = teamDefense.character1.lifePoints + teamDefense.character2.lifePoints +  teamAttack.character3.lifePoints
 }
