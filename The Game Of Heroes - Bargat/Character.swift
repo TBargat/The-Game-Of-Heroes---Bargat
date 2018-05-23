@@ -1,5 +1,10 @@
 import Foundation
 
+
+enum CharacterType { // The enum for our 4 types
+    case Fighter, Healer, Giant, Dwarf
+}
+
 // Character Class
 
 class Character {
@@ -79,6 +84,4 @@ class Character {
     }
 }
 
-enum CharacterType { // The enum for our 4 types
-    case Fighter, Healer, Giant, Dwarf
-}
+

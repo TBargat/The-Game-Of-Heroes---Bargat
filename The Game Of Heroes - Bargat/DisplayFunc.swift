@@ -1,15 +1,12 @@
 import Foundation
 
 // Function to send a message at the beginning of the game
-
 func letsStart() {
     print("🏰 Bienvenue dans Game of Heroes 🏰"
         + "\nDébutons notre joute du jour !!")
 }
 
-
 // Function to display the info of a team
-
 func teamInfo(team: Team) {
     print("\nÉtat de l'équipe de \(team.player.playerName) :")
     for character in team.teamCompo {
@@ -22,9 +19,3 @@ func teamInfo(team: Team) {
     }
 }
 
-// Congratulations to the winner
-
-func congratulateTheWinner(winner: Team, loser: Team) {
-    print("\nBravo à \(winner.player.playerName) qui remporte la partie! \(loser.player.playerName) n'aura pas démérité mais est tombé sur plus vaillant aujourd'hui!")
-    print("La partie a duré \(roundNumber) tours! Waouh, c'était intense!")
-}

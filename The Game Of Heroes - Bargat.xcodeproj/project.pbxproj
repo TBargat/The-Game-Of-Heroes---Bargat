@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F611CCDC20B5C4DD001FB8FF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F611CCDB20B5C4DD001FB8FF /* Game.swift */; };
 		F6F367A420A8977F00068336 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F367A320A8977F00068336 /* main.swift */; };
 		F6F367AB20A897C500068336 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F367AA20A897C500068336 /* Character.swift */; };
 		F6F367AD20A897D000068336 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F367AC20A897D000068336 /* Player.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F611CCDB20B5C4DD001FB8FF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F6F367A020A8977F00068336 /* The Game Of Heroes - Bargat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "The Game Of Heroes - Bargat"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F367A320A8977F00068336 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F6F367AA20A897C500068336 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				F6F367AE20A897DC00068336 /* Team.swift */,
 				F6F367AC20A897D000068336 /* Player.swift */,
 				F6F367AA20A897C500068336 /* Character.swift */,
+				F611CCDB20B5C4DD001FB8FF /* Game.swift */,
 			);
 			path = "The Game Of Heroes - Bargat";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F367AF20A897DC00068336 /* Team.swift in Sources */,
+				F611CCDC20B5C4DD001FB8FF /* Game.swift in Sources */,
 				F6F367A420A8977F00068336 /* main.swift in Sources */,
 				F6F367B120A8985000068336 /* DisplayFunc.swift in Sources */,
 				F6F367B720A89B1800068336 /* MysteriousBox.swift in Sources */,
