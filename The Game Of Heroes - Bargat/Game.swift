@@ -31,8 +31,7 @@ class Game {
     }
     
     func endOfGame() {
-        // We create two variable, to store our winner and our loser later.
-        var winner: Team
+        var winner: Team// We create two variables, to store our winner and our loser later.
         var loser: Team
         
         if team1.totalLifePoints == 0 { // we observe the two potential outcomes of our game to initiate our variables
@@ -43,28 +42,9 @@ class Game {
             loser = team2
         }
         
-        // We close the game with this function
-        congratulateTheWinner(winner: winner, loser: loser)
+        congratulateTheWinner(winner: winner, loser: loser) // We close the game with this function
     }
 
-    func letsStart() {  // Function to send a message at the beginning of the game
-        print("🏰 Bienvenue dans Game of Heroes 🏰"
-            + "\nDébutons notre joute du jour !!")
-    }
-
-    
-    func teamInfo(team: Team) { // Function to display the info of a team
-        print("\nÉtat de l'équipe de \(team.player.playerName) :")
-        for character in team.teamCompo {
-            if character.lifePoints == 0 {
-                // If a character loses more life points than its remaining life points, it won't get lower than 0, and the character will be dead then.
-                print("       - Le \(character.typeName) \(character.characterName) est mort.")
-            } else {
-                print("       - Le \(character.typeName) \(character.characterName) a \(character.lifePoints) PVs et a \(character.weaponName).")
-            }
-        }
-    }
-    
     
     func congratulateTheWinner(winner: Team, loser: Team) { // Congratulations to the winner
         print("\nBravo à \(winner.player.playerName) qui remporte la partie! \(loser.player.playerName) n'aura pas démérité mais est tombé sur plus vaillant aujourd'hui!")
